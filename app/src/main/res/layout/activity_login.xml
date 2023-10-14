@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:alpha="0.6"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="600dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardBackgroundColor="@color/main_black"
+        android:layout_marginBottom="-20dp"
+        app:cardCornerRadius="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Login"
+                android:layout_gravity="center_horizontal"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:textColor="@color/main_yellow"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="360dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/border_input"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/main_yellow"
+                android:hint="Type your email or phone here"
+                android:textColorHint="@color/main_yellow"
+                android:paddingHorizontal="15dp"
+                android:drawableStart="@drawable/person"/>
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="360dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/border_input"
+                android:layout_gravity="center_horizontal"
+                android:hint="Type your password here"
+                android:textColorHint="@color/main_yellow"
+                android:paddingHorizontal="15dp"
+                android:textColor="@color/main_yellow"
+                android:drawableStart="@drawable/password"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login_button"
+                android:layout_width="360dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="130dp"
+                android:background="@drawable/button"
+                android:layout_gravity="center_horizontal"
+                android:text="Login"
+                android:textSize="20dp"
+                android:textColor="@color/main_black"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:id="@+id/link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="80dp"
+                android:text="Don't have account yet? Register here"
+                android:textColor="@color/main_yellow"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
