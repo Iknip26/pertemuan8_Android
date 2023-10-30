@@ -12,8 +12,9 @@ class Register : AppCompatActivity() {
 
     companion object{
         var usernames = "user"
-        val names = "nama"
+        val emails = "email"
         var passwords = "password"
+        val phones = ""
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityRegisterBinding.inflate(layoutInflater)
@@ -22,11 +23,12 @@ class Register : AppCompatActivity() {
 
         with(binding){
             regisButton.setOnClickListener{
-                if(username.text.toString()!="" && password.text.toString()!="" && nama.text.toString()!=""){
+                if(username.text.toString()!="" && password.text.toString()!="" && email.text.toString()!="" && telepon.text.toString()!="" ){
                     val intentLogin = Intent(this@Register, Login::class.java)
                     intentLogin.putExtra(usernames, username.text.toString())
                     intentLogin.putExtra(passwords, password.text.toString())
-                    intentLogin.putExtra(names, nama.text.toString())
+                    intentLogin.putExtra(emails, email.text.toString())
+                    intentLogin.putExtra(phones, telepon.text.toString())
                     startActivity(intentLogin)
                 }else{
                     Toast.makeText(this@Register, "Kolom tidak boleh kosong", Toast.LENGTH_SHORT).show()

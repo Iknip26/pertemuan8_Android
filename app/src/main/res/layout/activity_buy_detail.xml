@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".buyDetail"
-    android:background="@color/main_black">
+    android:background="@color/white">
 
     <LinearLayout
         android:id="@+id/header"
@@ -14,9 +14,9 @@
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="25dp"
-        android:paddingBottom="10dp"
-        android:layout_marginHorizontal="30dp">
+        android:paddingVertical="15dp"
+        android:background="@color/main_black"
+        >
 
         <ImageView
             android:layout_width="40dp"
@@ -44,20 +44,22 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center_horizontal">
 
             <androidx.cardview.widget.CardView
                 app:cardCornerRadius="30dp"
-                android:layout_marginHorizontal="40dp"
+                android:layout_marginHorizontal="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardElevation="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -89,7 +91,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="JUDUL_FILM"
                                 android:fontFamily="sans-serif-black"
-                                android:textSize="18dp"
+                                android:textSize="24dp"
                                 android:textColor="@color/main_black"/>
 
                             <TextView
@@ -197,21 +199,24 @@
 
             </androidx.cardview.widget.CardView>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:background="@drawable/border_text"
-                android:layout_marginHorizontal="35dp"
-                android:text="Confirm and Pay"
-                android:layout_marginTop="40dp"
-                android:layout_marginBottom="40dp"
-                android:fontFamily="sans-serif-medium"
-                android:textSize="18dp" />
-
         </LinearLayout>
 
     </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/border_text"
+        android:backgroundTint="@color/main_black"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="15dp"
+        android:text="Confirm and Pay"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="18dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

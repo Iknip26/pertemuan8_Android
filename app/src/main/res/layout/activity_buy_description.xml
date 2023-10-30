@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".buyDescription"
-    android:background="@color/main_black"
+    android:background="@color/white"
     >
 
     <LinearLayout
@@ -15,9 +15,10 @@
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="25dp"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="10dp"
         android:paddingBottom="10dp"
-        android:layout_marginHorizontal="30dp">
+        android:background="@color/main_black">
 
         <ImageView
             android:layout_width="40dp"
@@ -53,7 +54,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="PILIH BIOSKOP"
-                android:textColor="@color/main_white"
+                android:textColor="@color/main_black"
                 android:fontFamily="sans-serif-medium"
                 android:textSize="18dp"
                 android:layout_marginTop="20dp"/>
@@ -66,13 +67,15 @@
                 android:paddingLeft="12dp"
                 android:padding="15dp"
                 android:layout_marginTop="10dp"
-                android:spinnerMode="dropdown"/>
+                android:backgroundTint="@color/main_white"
+                android:spinnerMode="dropdown"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="PILIH Jenis Seat"
-                android:textColor="@color/main_white"
+                android:textColor="@color/main_black"
                 android:fontFamily="sans-serif-medium"
                 android:textSize="18dp"
                 android:layout_marginTop="20dp"/>
@@ -91,7 +94,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Pilih Tanggal"
-                android:textColor="@color/main_white"
+                android:textColor="@color/main_black"
                 android:fontFamily="sans-serif-medium"
                 android:textSize="18dp"
                 android:layout_marginTop="40dp"/>
@@ -116,7 +119,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Jenis Seat"
-                    android:textColor="@color/main_white"
+                    android:textColor="@color/main_black"
                     android:fontFamily="sans-serif-medium"
                     android:textSize="18dp"
                     />
@@ -127,7 +130,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Jenis Seat"
-                    android:textColor="@color/main_white"
+                    android:textColor="@color/main_black"
                     android:fontFamily="sans-serif-medium"
                     android:textSize="18dp"
                     />
@@ -145,7 +148,7 @@
                 android:layout_height="wrap_content"
                 android:text="Payment Method"
                 android:layout_marginTop="20dp"
-                android:textColor="@color/main_white"
+                android:textColor="@color/main_black"
                 android:fontFamily="sans-serif-medium"
                 android:textSize="24dp"
                 />
@@ -167,7 +170,7 @@
                 android:orientation="horizontal"
                 android:gravity="center"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="40dp">
+                android:paddingBottom="30dp">
 
                 <androidx.appcompat.widget.AppCompatSpinner
                     android:id="@+id/spiner_bank"
@@ -176,7 +179,7 @@
                     android:layout_height="wrap_content"
                     android:paddingLeft="12dp"
                     android:padding="15dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="0dp"
                     android:spinnerMode="dropdown"
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"/>
@@ -185,9 +188,9 @@
                     android:id="@+id/rekening_inp"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="0dp"
                     android:hint="Account number"
-                    android:padding="10dp"
+                    android:padding="15dp"
                     android:textSize="16dp"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="3"
@@ -202,7 +205,9 @@
 
     <TextView
         android:id="@+id/button_submit"
-        android:background="@color/main_white"
+        android:background="@color/main_black"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:textAlignment="center"

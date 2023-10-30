@@ -6,22 +6,21 @@
     app:cardCornerRadius="20dp"
     android:layout_marginHorizontal="10dp"
     android:layout_marginVertical="10dp"
-    android:id="@+id/each_card">
+    android:id="@+id/each_card"
+    app:cardElevation="5dp">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/main_white">
+        android:background="@color/white">
 
         <androidx.cardview.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="240dp"
             app:cardCornerRadius="20dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="10dp"
-            android:layout_width="match_parent"
-            android:layout_marginHorizontal="15dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center_horizontal">
+            android:layout_margin="5dp"
+            android:layout_gravity="center">
 
             <ImageView
                 android:id="@+id/gambar"
@@ -30,6 +29,7 @@
                 />
 
         </androidx.cardview.widget.CardView>
+
 
         <TextView
             android:id="@+id/judul"
@@ -40,18 +40,18 @@
             android:layout_gravity="center_horizontal"
             android:fontFamily="sans-serif-condensed-medium"
             android:textSize="12dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             />
 
         <ImageView
             android:id="@+id/rate"
-            android:layout_width="100dp"
-            android:layout_height="20dp"
+            android:layout_width="80dp"
+            android:layout_height="15dp"
             android:textColor="@color/main_black"
             android:layout_gravity="center_horizontal"
             android:fontFamily="sans-serif-condensed-medium"
             android:textSize="12dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             />
 
     </androidx.appcompat.widget.LinearLayoutCompat>

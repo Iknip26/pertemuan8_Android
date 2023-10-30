@@ -1,5 +1,6 @@
 package com.example.tiketapp_uts
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.tiketapp_uts.databinding.ActivityBuyDescriptionBinding
@@ -34,6 +35,12 @@ class buyDetail : AppCompatActivity() {
                 PAYMENT.text = "$payment, ($bank)"
             }else{
                 PAYMENT.text = "$payment"
+            }
+
+            buttonPay.setOnClickListener{
+                val intentHome = Intent(this@buyDetail, homeScreen::class.java)
+                startActivity(intentHome)
+                finish()
             }
         }
     }

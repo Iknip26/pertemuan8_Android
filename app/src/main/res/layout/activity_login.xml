@@ -24,7 +24,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:cardBackgroundColor="@color/main_black"
+        app:cardBackgroundColor="@color/white"
         android:layout_marginBottom="-20dp"
         app:cardCornerRadius="30dp">
 
@@ -42,33 +42,37 @@
                 android:layout_gravity="center_horizontal"
                 android:textSize="40dp"
                 android:textStyle="bold"
-                android:textColor="@color/main_yellow"/>
+                android:textColor="@color/main_black"/>
 
             <EditText
-                android:id="@+id/email"
+                android:id="@+id/email_inp"
                 android:layout_width="360dp"
                 android:layout_height="65dp"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/border_input"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@color/main_yellow"
+                android:textColor="@color/main_black"
                 android:hint="Type your email or phone here"
-                android:textColorHint="@color/main_yellow"
+                android:textColorHint="@color/main_black"
                 android:paddingHorizontal="15dp"
-                android:drawableStart="@drawable/person"/>
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"
+                android:drawableStart="@drawable/person2"/>
 
             <EditText
-                android:id="@+id/pass"
+                android:id="@+id/pass_inp"
                 android:layout_width="360dp"
                 android:layout_height="65dp"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/border_input"
                 android:layout_gravity="center_horizontal"
                 android:hint="Type your password here"
-                android:textColorHint="@color/main_yellow"
+                android:textColorHint="@color/main_black"
                 android:paddingHorizontal="15dp"
-                android:textColor="@color/main_yellow"
-                android:drawableStart="@drawable/password"/>
+                android:textColor="@color/main_black"
+                android:drawablePadding="10dp"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/password2"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/login_button"
@@ -76,10 +80,11 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="130dp"
                 android:background="@drawable/button"
+                android:backgroundTint="@color/main_black"
                 android:layout_gravity="center_horizontal"
                 android:text="Login"
                 android:textSize="20dp"
-                android:textColor="@color/main_black"
+                android:textColor="@color/white"
                 android:fontFamily="sans-serif-medium"/>
 
             <TextView
@@ -89,7 +94,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="80dp"
                 android:text="Don't have account yet? Register here"
-                android:textColor="@color/main_yellow"
+                android:textColor="@color/main_black"
                 android:layout_gravity="center_horizontal"/>
 
         </LinearLayout>
